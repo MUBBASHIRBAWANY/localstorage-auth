@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZ || APP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- #################### font awesome link #################### -->
+   <link rel="stylesheet" href="../style/style.css">
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="../img/Hands Graduate.png" />
+          <h1>Quiz<span>Grad</span></h1>
+        </div>
+        <ul class="list">
+          <li><a href="../video pgae/video.html">How it works?</a></li>
+               <li>
+            <a class="jam" href="../signup.html">Signup</a>
+          </li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+    </header>
+    <!-- #################### login form #################### -->
+
+    <section class="login">
+      <div class="contentform content">
+        <div class="head">
+          <h1>Quiz<span>Grad</span></h1>
+        </div>
+        <p>
+          Welcome Back!<br />
+          Please login/signup to your account.
+        </p>
+        <form action="">
+          <div class="inputBox">
+            <label for="signUpEmail">Email Address</label>
+            <input
+              id="signUpEmail"
+              type="text"
+              placeholder="email address"
+            />
+          </div>
+          <div class="inputBox">
+            <label for="signupPassword">passowrd</label>
+            <input id="signupPassword" type="password" placeholder="Password" />
+          </div>
+          <div class="remember">
+            <div class="input">
+              <input id="check" type="checkbox" /><label for="check"
+                >Remember</label
+              >
+            </div>
+            <a href="#">Forget Password?</a>
+          </div>
+          <button id="login">Login</button>
+        </form>
+        <div class="socialAcc">
+          <p>or login with</p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">facebook</a>
+            </li>
+            <li>
+              <a href="https://mail.google.com/" target="_blank">google</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contentimg content">
+        <img src="../img/Hands Graduate.png" />
+      </div>
+    </section>
+
+    <section class="loader">
+      <div class="loaderRound"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/login.js"></script>
+  </body>
+</html>

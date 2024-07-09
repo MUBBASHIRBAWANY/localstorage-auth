@@ -1,0 +1,1975 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+/*
+###############################################################################################
+                                MAIN PAGE STYLING 
+#############################################################################################
+*/
+.mainPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 30px;
+}
+@keyframes mainpage {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.mainHead {
+  position: relative;
+}
+.mainPage .mainHead h1 {
+  font-size: 136px;
+  font-weight: 500;
+  color: #333;
+  animation: mainpage 1s ease-in-out forwards;
+}
+.mainPage .mainHead h1 span {
+  color: #fcc822;
+}
+.mainPage h3 {
+  font-size: 74px;
+  font-weight: 400;
+  color: #333;
+  animation: mainpage 1s ease-in-out forwards;
+}
+.mainPage h3 span {
+  color: #fcc822;
+}
+.mainPage img {
+  width: 130px;
+  position: absolute;
+  top: -7%;
+  left: -7%;
+  transform: rotate(-30deg);
+  animation: mainimg 1s ease-in-out alternate;
+}
+@keyframes mainimg {
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(-20eg);
+  }
+}
+.mainPage a {
+  width: 350px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 31px;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background: #fcc822;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  animation: mainpage 1s ease-in-out forwards;
+}
+.mainPage a:hover {
+  background: transparent;
+  border: 1px solid #fcc822;
+  color: #fcc822;
+}
+/*
+###############################################################################################
+                                LANDING PAGE STYLING 
+#############################################################################################
+*/
+header {
+  width: 100%;
+  min-height: 15vh;
+}
+header nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 20px;
+  background: #eee;
+  position: relative;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 99999;
+}
+nav .logo h1 {
+  font-size: 43px;
+  color: #333;
+}
+.logo h1 span {
+  color: #fcc822;
+}
+nav .logo img {
+  width: 40px;
+  position: absolute;
+  top: -3px;
+  left: -14px;
+  animation: landimg 1s ease-in-out infinite;
+}
+@keyframes landimg {
+  0% {
+    transform: scale(1) rotate(-30deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-30deg);
+  }
+  100% {
+    transform: scale(1) rotate(-30deg);
+  }
+}
+.list {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  transition: 0.3s ease-in-out;
+  z-index: 9999;
+}
+.list li {
+  margin-right: 30px;
+}
+.list li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.list li a:hover {
+  color: #fcc822;
+}
+.list li .jam {
+  width: 220px;
+  background: transparent;
+  border: 1px solid #fcc822;
+  padding: 7px 30px;
+  color: #fcc822;
+  font-weight: 600;
+}
+.list li .jam:hover {
+  background: #fcc822;
+  color: #fff;
+}
+header nav i {
+  display: none !important;
+  font-size: 40px;
+  cursor: pointer;
+  color: #fcc822;
+  z-index: 9999 !important;
+  transition: 0.3s ease-in-out;
+  z-index: 99992;
+}
+/*
+###############################################################################################
+                                HERO SECTION STYLING 
+#############################################################################################
+*/
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.hero .content {
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hero .herocontent h1 {
+  font-size: 54px;
+  letter-spacing: 1px;
+  font-family: "roboto", sans-serif;
+}
+.hero .herocontent p {
+  font-size: 20px;
+  border-left: 2px solid #000;
+  padding-left: 10px;
+  margin: 20px 0;
+  color: #ccc;
+}
+.herocontent button {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background: #fcc822;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+}
+.herocontent button:hover {
+  background: transparent;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+.heroimg img {
+  align-self: center;
+  width: 350px;
+  animation: heroimg 1.5s ease-in-out infinite;
+  z-index: -2323;
+}
+@keyframes heroimg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*
+###############################################################################################
+                            LOGIN/SIGNUP FORM SECTION STYLING
+#############################################################################################
+*/
+.login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login .content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.login .contentimg img {
+  width: 400px;
+  align-self: center;
+  animation: logimg 1.8s ease-in-out infinite;
+  z-index: -343434;
+}
+@keyframes logimg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.login .contentform .head {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.contentform .head h1 {
+  font-size: 75px;
+  font-weight: 600;
+}
+@keyframes loginlogo {
+  0% {
+    transform: scale(1) rotate(-30deg);
+  }
+  50% {
+    transform: scale(0.9) rotate(-30deg);
+  }
+  100% {
+    transform: scale(1) rotate(-30deg);
+  }
+}
+.contentform .head h1 span {
+  color: #fcc822;
+}
+.contentform p {
+  font-size: 21px;
+  color: #0008;
+  align-self: center;
+  text-align: center;
+  margin: 50px 0;
+}
+.contentform form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contentform .inputBox {
+  border: 1px solid #ccc;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 8px 10px;
+}
+.contentform .inputBox input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  color: #333;
+  font-weight: 500;
+}
+.contentform .inputBox input::placeholder {
+  color: #c3c3c3;
+}
+.inputBox label {
+  color: #fcc822;
+}
+.contentform .remember {
+  display: flex;
+  width: 100%;
+  min-height: 20px;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contentform form .remember .input {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+form .remember .input input {
+  margin-right: 5px;
+}
+.remember a {
+  text-decoration: none;
+  color: #333;
+}
+.contentform form button {
+  width: 340px;
+  min-height: 45px;
+  margin-top: 20px;
+  border: 1px solid #fcc822;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  color: #fcc822;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.contentform form button:hover {
+  background-color: #fcc822;
+  color: #fff;
+}
+.contentform .socialAcc {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contentform .socialAcc ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socialAcc ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+.socialAcc ul li a {
+  text-decoration: none;
+  color: #fcc822;
+  font-weight: 500;
+  font-size: 17px;
+}
+.loader {
+  width: 100%;
+  min-height: 150vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.7)
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader .loaderRound {
+  width: 120px;
+  height: 120px;
+  margin-top: 240px;
+  border-top: 10px solid #fcc822;
+  border-left: 10px solid #fcc822;
+  border-bottom: 10px solid #fcc822;
+  border-right: 10px solid #cccccc65;
+  border-radius: 50%;
+  animation: loaderRound 1s ease-in-out infinite;
+}
+@keyframes loaderRound {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*
+###############################################################################################
+                                  QUIZ PAGE STYLING START 
+#############################################################################################
+*/
+.logoutPopUp {
+  width: 550px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  animation: logout 1.2s ease-in-out alternate;
+  z-index: 999999;
+  background-color: #fff;
+}
+@keyframes logout {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.1) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.logoutPopUp h1 {
+  font-size: 40px;
+  color: #fcc822;
+}
+.logoutPopUp .btnBox {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.logoutPopUp .btnBox button {
+  width: 210px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: #fcc822;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logoutPopUp .btnBox button:hover {
+  background: transparent;
+  border: 1px solid #fcc822;
+  color: #fcc822;
+}
+.startbox {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  z-index: -999;
+}
+.startbox button {
+  width: 450px;
+  min-height: 45px;
+  border-radius: 30px;
+  border: none;
+  background: #fcc822;
+  font-size: 21px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  animation: start 5s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes start {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(380deg);
+    background-color: #fff;
+    color: #fcc822;
+    border: 1px solid #fcc822;
+  }
+  75% {
+    transform: rotateX(380deg);
+    background-color: #fff;
+    color: #fcc822;
+    border: 1px solid #fcc822;
+  }
+  100% {
+    transform: rotateX(360deg);
+    background-color: #fcc822;
+    color: #fff;
+  }
+}
+.selectBox {
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.selectBox .box {
+  width: 950px;
+  min-height: 230px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 12px;
+}
+.selectBox .box button {
+  width: 400px;
+  min-height: 45px;
+  margin: 10px 5px;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: 700;
+  background-color: #fcc822;
+  color: #fff;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.3s ease-in-out;
+  animation: multBtn 4s ease-in-out 2s infinite;
+}
+@keyframes multBtn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.selectBox .box button:hover {
+  background: #fff;
+  border: 1px solid #fcc822;
+  color: #fcc822;
+}
+.quizloader {
+  width: 100%;
+  height: 90vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.7)
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quizloader .loaderRound {
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+  border-top: 10px solid #fcc822;
+  border-left: 10px solid #fcc822;
+  border-bottom: 10px solid #fcc822;
+  border-right: 10px solid #cccccc65;
+  border-radius: 50%;
+  animation: loaderRound 1s ease-in-out infinite;
+}
+@keyframes loaderRound {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+###############################################################################################
+                                QUIZ SECTIONS STYLING START 
+#############################################################################################
+*/
+.section {
+  width: 100%;
+  min-height: 85vh;
+  padding: 10px 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section .quizBox {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.section .quizBox .questionBox,
+.quizBox .answerBox,
+.quizBox .quizbtn {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px 8px;
+}
+.quizBox .questionBox {
+  background-color: #fcc822;
+}
+.questionBox h1 {
+  font-size: 28px;
+  color: #fff;
+}
+.quizBox .answerBox button {
+  width: 440px;
+  min-height: 50px;
+  margin: 10px;
+  background-color: #fff;
+  color: #fcc822;
+  font-size: 21px;
+  font-weight: 600;
+  border: 1px solid #fcc822;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.quizBox .answerBox button:hover {
+  background: #fcc822;
+  color: #fff;
+}
+.quizBox .quizbtn button {
+  width: 180px;
+  min-height: 40px;
+  cursor: pointer;
+  background-color: #fcc822;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+  margin: 10px 8px;
+}
+.quizBox .quizbtn p {
+  font-size: 21px;
+  font-weight: 700;
+}
+.quizBox .quizbtn p span {
+  color: #fcc822;
+  font-weight: 500;
+}
+.quizBox .quizbtn button:hover {
+  background: transparent;
+  border: 1px solid #fcc822;
+  color: #fcc822;
+}
+/* ####################### general knowledge score ################### */
+.score {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.score .scoreimg {
+  width: 450px;
+  position: relative;
+}
+.score .scoreimg img {
+  width: 100%;
+}
+.score .scoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.score .scoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  font-size: 120px;
+  color: #fff;
+}
+.score button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.score button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### intillegence quoitent score ################### */
+.iqscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: iqscore 3s ease-in-out alternate;
+}
+@keyframes iqscore {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.iqscore .iqscoreimg {
+  width: 450px;
+  position: relative;
+}
+.iqscore .iqscoreimg img {
+  width: 100%;
+}
+.iqscore .iqscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.iqscore .iqscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  font-size: 120px;
+  color: #fff;
+}
+.iqscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.iqscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### Math score ################### */
+.mtscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.mtscore .mtscoreimg {
+  width: 450px;
+  position: relative;
+}
+.mtscore .mtscoreimg img {
+  width: 100%;
+}
+.mtscore .mtscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.mtscore .mtscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  font-size: 120px;
+  color: #fff;
+}
+.mtscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.mtscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### islamiyat score ################### */
+.islscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.islscore .islscoreimg {
+  width: 450px;
+  position: relative;
+}
+.islscore .islscoreimg img {
+  width: 100%;
+}
+.islscore .islscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.islscore .islscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  font-size: 120px;
+  color: #fff;
+}
+.islscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.islscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### urdu score ################### */
+.urscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.urscore .urscoreimg {
+  width: 450px;
+  position: relative;
+}
+.urscore .urscoreimg img {
+  width: 100%;
+}
+.urscore .urscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.urscore .urscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  font-size: 120px;
+  color: #fff;
+}
+.urscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.urscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### english score ################### */
+.enscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.enscore .enscoreimg {
+  width: 450px;
+  position: relative;
+}
+.enscore .enscoreimg img {
+  width: 100%;
+}
+.enscore .enscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.enscore .enscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.enscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.enscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### pak studies score ################### */
+.psscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.psscore .psscoreimg {
+  width: 450px;
+  position: relative;
+}
+.psscore .psscoreimg img {
+  width: 100%;
+}
+.psscore .psscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.psscore .psscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.psscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.psscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### computer science score ################### */
+.csscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.csscore .csscoreimg {
+  width: 450px;
+  position: relative;
+}
+.csscore .csscoreimg img {
+  width: 100%;
+}
+.csscore .csscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.csscore .csscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.csscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.csscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### biology score ################### */
+.bioscore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bioscore .bioscoreimg {
+  width: 450px;
+  position: relative;
+}
+.bioscore .bioscoreimg img {
+  width: 100%;
+}
+.bioscore .bioscoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.bioscore .bioscoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.bioscore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.bioscore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### chemistry score ################### */
+.chescore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.chescore .chescoreimg {
+  width: 450px;
+  position: relative;
+}
+.chescore .chescoreimg img {
+  width: 100%;
+}
+.chescore .chescoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.chescore .chescoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 120px;
+  color: #fff;
+}
+.chescore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.chescore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+/* ####################### physics score ################### */
+.physcore {
+  width: 790px;
+  min-height: 330px;
+  border: 1px solid #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #000;
+  background: #fff;
+  position: absolute;
+  animation: score 3s ease-in-out alternate;
+}
+@keyframes score {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.physcore .physcoreimg {
+  width: 450px;
+  position: relative;
+}
+.physcore .physcoreimg img {
+  width: 100%;
+}
+.physcore .physcoreimg h4 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  font-size: 40px;
+  color: #fff;
+}
+.physcore .physcoreimg h1 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: 120px;
+  color: #fff;
+}
+.physcore button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 120px;
+  height: 30px;
+  background: #fcc822;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.physcore button:hover {
+  background: #fff;
+  color: #fcc822;
+  border: 1px solid #fcc822;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ######################## media query ######################## */
+
+@media (max-width: 1020px) {
+  .hero {
+    padding: 15px 20px;
+  }
+  .hero .herocontent h1 {
+    font-size: 38px;
+  }
+  .hero .herocontent p {
+    font-size: 17px;
+  }
+  .section {
+    padding: 10px 15px;
+  }
+  .quizBox .answerBox button {
+    width: 80%;
+  }
+}
+@media (max-width: 870px) {
+  .login {
+    flex-direction: column;
+  }
+  .login .content {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .login .contentimg {
+    order: 0;
+  }
+  .login .contentform {
+    order: 1;
+  }
+  .login .contentimg img {
+    width: 360px;
+  }
+  .loader {
+    height: 300vh;
+  }
+  .loader .loaderRound {
+    margin-top: 1000px;
+  }
+  .selectBox .box button {
+    width: 310px;
+  }
+  .score {
+    width: 450px;
+  }
+  .score .scoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .score .scoreimg h4 {
+    font-size: 21px;
+  }
+  .score .scoreimg h1 {
+    font-size: 51px;
+    left: 34%;
+    top: 34%;
+  }
+  /* ########### iq score ############## */
+  .iqscore {
+    width: 450px;
+  }
+  .iqscore .iqscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .iqscore .iqscoreimg h4 {
+    font-size: 21px;
+  }
+  .iqscore .iqscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+
+  /* ########### math score ############## */
+  .mtscore {
+    width: 450px;
+  }
+  .mtscore .mtscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .mtscore .mtscoreimg h4 {
+    font-size: 21px;
+  }
+  .mtscore .mtscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### islamiyat score ############## */
+  .islscore {
+    width: 450px;
+  }
+  .islscore .islscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .islscore .islscoreimg h4 {
+    font-size: 21px;
+  }
+  .islscore .islscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### urdu score ############## */
+  .urscore {
+    width: 450px;
+  }
+  .urscore .urscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .urscore .urscoreimg h4 {
+    font-size: 21px;
+  }
+  .urscore .urscoreimg h1 {
+    font-size: 51px;
+    left: 35%;
+    top: 34%;
+  }
+
+  /* ########### english score ############## */
+  .enscore {
+    width: 450px;
+  }
+  .enscore .enscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .enscore .enscoreimg h4 {
+    font-size: 21px;
+  }
+  .enscore .enscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### pak studies score ############## */
+  .psscore {
+    width: 450px;
+  }
+  .psscore .psscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .psscore .psscoreimg h4 {
+    font-size: 21px;
+  }
+  .psscore .psscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### computer science score ############## */
+  .csscore {
+    width: 450px;
+  }
+  .csscore .csscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .csscore .csscoreimg h4 {
+    font-size: 21px;
+  }
+  .csscore .csscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### biology score ############## */
+  .bioscore {
+    width: 450px;
+  }
+  .bioscore .bioscoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .bioscore .bioscoreimg h4 {
+    font-size: 21px;
+  }
+  .bioscore .bioscoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### chemistry score ############## */
+  .chescore {
+    width: 450px;
+  }
+  .chescore .chescoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .chescore .chescoreimg h4 {
+    font-size: 21px;
+  }
+  .chescore .chescoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+  /* ########### physics score ############## */
+  .physcore {
+    width: 450px;
+  }
+  .physcore .physcoreimg {
+    width: 230px;
+    min-height: 230px;
+  }
+  .physcore .physcoreimg h4 {
+    font-size: 21px;
+  }
+  .physcore .physcoreimg h1 {
+    font-size: 51px;
+    left: 44%;
+    top: 34%;
+  }
+}
+@media (max-width: 740px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero .content {
+    width: 100%;
+  }
+  .hero .heroimg {
+    margin-bottom: 40px;
+    order: 0;
+  }
+  .hero .heroimg img {
+    width: 240px;
+  }
+  .hero .herocontent {
+    order: 1;
+  }
+}
+@media (max-width: 685px) {
+  .mainPage .mainHead h1 {
+    font-size: 64px;
+  }
+  .mainPage h3 {
+    font-size: 44px;
+  }
+  .mainPage .mainHead img {
+    width: 60px;
+  }
+  .mainPage a {
+    width: 280px;
+  }
+  /* ################ landing page ################# */
+  .logo {
+    z-index: 9999;
+  }
+  nav .list {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 330px;
+    padding: 50px 0 0 20px;
+    background-color: #fcc822;
+    position: absolute;
+    left: 0;
+    top: -400px;
+    border-bottom-right-radius: 30px;
+  }
+  .list li {
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .list li a:hover {
+    color: #fff;
+  }
+  .list li .jam {
+    background: #fff;
+    color: #fcc822;
+    align-self: center;
+  }
+  .list li .jam:hover {
+    border: 1px solid #fff;
+  }
+  header nav i {
+    display: inline-block !important;
+  }
+  /* ########################### quiz page styling ##################### */
+  .logoutPopUp {
+    width: 340px;
+    height: 180px;
+  }
+  .logoutPopUp h1 {
+    font-size: 23px;
+  }
+  .logoutPopUp .btnBox button {
+    width: 45%;
+    height: 35px;
+    font-size: 20px;
+  }
+  .selectBox .box button {
+    width: 170px;
+  }
+  .quizBox .quizbtn {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .quizBox .quizbtn button {
+    width: 80%;
+  }
+  .quizbtn p {
+    order: -1;
+  }
+  .score {
+    width: 290px;
+  }
+  /* ######### iq score ########## */
+  .iqscore {
+    width: 290px;
+  }
+  /* ########### math ################ */
+  .mtscore {
+    width: 290px;
+  }
+  /* ########### islamiyat ################ */
+  .islscore {
+    width: 290px;
+  }
+  /* ########### urdu ################ */
+  .urscore {
+    width: 290px;
+  }
+  /* ########### english ################ */
+  .enscore {
+    width: 290px;
+  }
+  /* ########### pak studies ################ */
+  .psscore {
+    width: 290px;
+  }
+  /* ########### computer science ################ */
+  .csscore {
+    width: 290px;
+  }
+  /* ########### biology ################ */
+  .bioscore {
+    width: 290px;
+  }
+  /* ########### chemistry ################ */
+  .chescore {
+    width: 290px;
+  }
+  /* ########### physics ################ */
+  .physcore {
+    width: 290px;
+  }
+}
+@media (max-width: 410px) {
+  .login .content {
+    padding: 0;
+    width: 100%;
+  }
+  .login {
+    padding: 0;
+  }
+  .login .contentimg img {
+    width: 240px;
+  }
+  .login .contentform .head h1 {
+    font-size: 53px;
+  }
+  .login .contentform form .inputBox {
+    width: 270px;
+  }
+  .login .contentform form .remember {
+    width: 270px;
+  }
+  form .remember label {
+    font-size: 15px;
+  }
+  form .remember a {
+    font-size: 15px;
+  }
+  .login .contentform form button {
+    width: 220px;
+  }
+  /* ################ quiz page styling ################## */
+  .logoutPopUp {
+    width: 290px;
+  }
+  .logoutPopUp h1 {
+    font-size: 18px;
+  }
+  .logoutPopUp .btnBox button {
+    width: 30%;
+  }
+  .loader {
+    height: 260vh;
+  }
+  .loader .loaderRound {
+    margin-top: 700px;
+  }
+  .selectBox .box button {
+    width: 100%;
+  }
+  .section {
+    padding: 30px 0px;
+  }
+  .quizBox .answerBox button {
+    width: 100%;
+  }
+}
+
+#solvebutton{
+    color: white;
+    text-decoration: none;
+}
+
+.login1{    width: 340px;
+  width: 340px;
+  min-height: 45px;
+  margin-top: 20px;
+  border: 1px solid #fcc822;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  color: #fcc822;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.login1:hover{
+  background-color: #fcc822;
+  color: white;
+}
+#btn3{
+  margin-top: 2vh;
+  height: 8vh;
+  width: 4vw;
+  border-radius: 50%;
+  position: relative;
+}
+
+#logout{
+  position: absolute;
+bottom: -25%;
+right: 1%;
+display: none;
+border: gray solid 2px;
+padding: 0.5%;
+}
+
